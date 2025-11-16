@@ -5,10 +5,13 @@ const repeatString = function(passedString, repeated) {
    {
     sum += passedString;
    }
+   if(repeated<0)
+   {
+    return "ERROR";
+   }
    return sum;
 };
 
-//repeatString("Uday",3);
 
 // Do not edit below this line
 module.exports = repeatString;
